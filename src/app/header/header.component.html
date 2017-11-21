@@ -1,0 +1,11 @@
+<nav>
+  <mat-toolbar role="header" color="primary">
+    <a mat-button routerLink="/" routerLinkActive="active">Wild Routes</a>
+    <div class="flex-spacer"></div>
+    <a mat-button routerLink="/events" routerLinkActive="active">Events</a>
+    <a mat-button routerLink="/blog" routerLinkActive="active">Blog</a>
+    <a mat-button routerLink="/links" routerLinkActive="active">Links</a>
+    <a mat-button routerLink="/wildlings" routerLinkActive="active">Wildlings</a>
+    <a mat-button routerLink="/wildlings" routerLinkActive="active">User {{auth.authenticated$ | async}}</a>
+  </mat-toolbar>
+</nav>
