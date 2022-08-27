@@ -1,53 +1,38 @@
-# Wild Routes
+# create-svelte
 
-This is the official repository for the new Wild Routes website that will be hosted under [https://wildroutes.org.uk](https://wildroutes.org.uk).
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-More information can be found under [branching out](https://wildroutes.org.uk/blog/branching-out/) blog post. Feel free to get involved, or to contact us using the [contact form](https://wildroutes.org.uk/contact/).
+## Creating a project
 
-## Project status
+If you're seeing this, you've probably already done this step. Congrats!
 
-This project is just starting out. The rough skeleton for the different features / areas are in place, but they still need to be planned and programmed.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-Feel free to pick a feature, open an issue and start the planning process.
-## Feature list
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-| Feature | Notes | Issue |
-|---------|-------|-------|
-| Home | Provide a catchy, customised landing page, with teasers to the different sections of the website | |
-| Blog | Allow the creation und publishing of blog posts by users | |
-| Events | Allow the creation, planning and joining of events by users | |
-| Links | Allow the sharing and discussion of interesting links | |
-| Wildlings | In other words the user area | |
-| About | A clear and friendly introduction to Wild Routes and what the project is about | |
-| Newsletter | Allow the signing up to and management of  newsletters | |
-| Email integration | Receive email notifications of latest happenings and allow reply to email functionality | |
+## Developing
 
-## Project information
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.3.
+```bash
+npm run dev
 
-This project uses the latest version of angular, angular material and firebase.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-### Development server
+## Building
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To create a production version of your app:
 
-### Code scaffolding
+```bash
+npm run build
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can preview the production build with `npm run preview`.
 
-### Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-### Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-### Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-### Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
